@@ -1,7 +1,9 @@
 CREATE TABLE `space_product_general_data`
 (
     `SpaceProduct`          varchar(20) NOT NULL,
-    `ProductType`           varchar(4) DEFAULT NULL,
+    `ProductType`           varchar(6) DEFAULT NULL,
+    `ManufacturedInSpace`   tinyint(1) DEFAULT NULL,
+    `ManufacturedOnEarth`   tinyint(1) DEFAULT NULL,
     `BaseUnit`              varchar(20) DEFAULT NULL,
     `ValidityStartDate`     varchar(20) DEFAULT NULL,
     `ValidityEndDate`       varchar(20) DEFAULT NULL,
